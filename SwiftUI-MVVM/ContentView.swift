@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var viewModel = ViewModel()
+    @StateObject var viewModel: ViewModel
+    
+    init(viewModel: ViewModel = ViewModel()) {
+        _viewModel = StateObject(wrappedValue: viewModel)
+    }
     
     var body: some View {
         List(viewModel.users) { user in
@@ -36,6 +40,11 @@ extension ContentView {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        let viewModel = ContentView.ViewModel()
+        viewModel.users = [
+            User(id: 1, name: "dummy")
+        ]
+        
+        return ContentView(viewModel: viewModel)
     }
 }
