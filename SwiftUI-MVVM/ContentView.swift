@@ -28,10 +28,14 @@ extension ContentView {
     class ViewModel: ObservableObject {
         @Published var users = [User]()
         
-        let apiService = APIService()
+        let dataService: DataService
+        
+        init(dataService: DataService = AppDataService()) {
+            self.dataService = dataService
+        }
         
         func getUsers() {
-            apiService.getUsers { [weak self] users in
+            dataService.getUsers { [weak self] users in
                 self?.users = users
             }
         }

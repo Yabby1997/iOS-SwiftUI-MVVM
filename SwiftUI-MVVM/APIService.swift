@@ -7,7 +7,11 @@
 
 import Foundation
 
-class APIService {
+protocol DataService {
+    func getUsers(completion: @escaping ([User]) -> ())
+}
+
+class AppDataService: DataService {
     func getUsers(completion : @escaping (([User]) -> ())) {
         completion([
             User(id: 1, name: "승훈"),
