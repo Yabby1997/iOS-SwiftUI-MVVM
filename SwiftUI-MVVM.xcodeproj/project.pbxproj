@@ -11,6 +11,8 @@
 		1DA56DD0269719F600AB5461 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA56DCF269719F600AB5461 /* ContentView.swift */; };
 		1DA56DD2269719F600AB5461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DA56DD1269719F600AB5461 /* Assets.xcassets */; };
 		1DA56DD5269719F600AB5461 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DA56DD4269719F600AB5461 /* Preview Assets.xcassets */; };
+		1DA56DDD26971AE500AB5461 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA56DDC26971AE500AB5461 /* User.swift */; };
+		1DA56DDF26971CAF00AB5461 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA56DDE26971CAF00AB5461 /* APIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		1DA56DD1269719F600AB5461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DA56DD4269719F600AB5461 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1DA56DD6269719F600AB5461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DA56DDC26971AE500AB5461 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1DA56DDE26971CAF00AB5461 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				1DA56DCD269719F600AB5461 /* SwiftUI_MVVMApp.swift */,
 				1DA56DCF269719F600AB5461 /* ContentView.swift */,
+				1DA56DDE26971CAF00AB5461 /* APIService.swift */,
+				1DA56DDC26971AE500AB5461 /* User.swift */,
 				1DA56DD1269719F600AB5461 /* Assets.xcassets */,
 				1DA56DD6269719F600AB5461 /* Info.plist */,
 				1DA56DD3269719F600AB5461 /* Preview Content */,
@@ -140,6 +146,8 @@
 			files = (
 				1DA56DD0269719F600AB5461 /* ContentView.swift in Sources */,
 				1DA56DCE269719F600AB5461 /* SwiftUI_MVVMApp.swift in Sources */,
+				1DA56DDF26971CAF00AB5461 /* APIService.swift in Sources */,
+				1DA56DDD26971AE500AB5461 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
